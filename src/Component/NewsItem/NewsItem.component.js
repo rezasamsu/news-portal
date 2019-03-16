@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, {Component, View} from 'react';
+import AppBar from '@material-ui/core/AppBar'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -18,7 +19,7 @@ export default class NewsItem extends Component {
     render()
 		{
 		return (
-		<Card style={styles.card}>
+		<Card style={styles.card} onClick={() => window.open(this.state.news.url)}>
 			<div>
 				<CardMedia
 					style={styles.cover}
