@@ -30,8 +30,8 @@ class Header extends Component {
                                 <Button color="inherit">Headline</Button>
                             </Link>
 
-                            <Link to="/politic" style={styles.button}>
-                                <Button color="inherit">Politic</Button>
+                            <Link to="/pemilu" style={styles.button}>
+                                <Button color="inherit">Pemilu</Button>
                             </Link>
 
                             <Link to="/economy" style={styles.button}>

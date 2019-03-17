@@ -14,7 +14,7 @@ export default class NewsList extends Component {
         }
     }
 
-    componentWillMount(){
+    componentDidMount(){
         axios.get(this.props.url)
             .then((response) => {
                 this.setState({
