@@ -19,27 +19,28 @@ export default class NewsItem extends Component {
 
     render()
 		{
+		    const { news } = this.state
 		return (
 		<Card style={styles.card}>
 			<div>
 				<CardMedia
 					style={styles.cover}
-					image={this.state.news.urlToImage}
+					image={news.urlToImage}
 				/>
 			</div>
 			<div style={styles.details}>
 				<CardContent style={styles.content}>
-					<a href={this.state.news.url} target="_blank">
+					<a href={news.url} target="_blank">
 					<Typography component="h5" variant="h5">
-						{this.state.news.title}
+						{news.title}
 					</Typography>
 					</a>
 
 					<Typography component="h5" variant="subtitle1">
-						{this.state.news.description}
+                        {news.description}
 					</Typography>
 					<Typography variant="p"/>
-					{convertTime(this.state.news.publishedAt)}
+					{convertTime(news.publishedAt)}
 				</CardContent>
 			</div>
 		</Card>

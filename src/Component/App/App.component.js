@@ -9,7 +9,7 @@ import Headline from '../Headline/Headline.component';
 import PemiluNews from '../PemiluNews/PemiluNews.component';
 import CorruptionNews from '../CorruptionNews/CorruptionNews.component';
 import SocialNews from '../SocialNews/SocialNews.component';
-import SportNews from '../SportNews/SportNews.component';
+
 
 export default class App extends Component{
     render(){
