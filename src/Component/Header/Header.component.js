@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { browserHistory } from 'react-router';
-import { withRouter, Redirect, Link } from 'react-router-dom'
+import React, {Component} from 'react'
+import {browserHistory} from 'react-router';
+import {withRouter, Redirect, Link} from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -10,28 +10,41 @@ import history from '../../history';
 import styles from './Header.component.style';
 
 class Header extends Component {
-    render(){
-        return(
-        <div>
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="h6" color="inherit">
-                        News
-                    </Typography>
+    render() {
+        return (
+            <div>
+                <AppBar position="static" style={styles.header}>
+                    <Toolbar>
+                        <div>
 
-                    <Link to="/" style={styles.button}>
-                        <Button color="inherit">Headline</Button>
-                    </Link>
+                            <div style={styles.titleStyle}>
+                                <Typography variant="h4" color="inherit">
+                                    Reza Portal News <br/>
+                                    <Typography variant="h5" color="inherit">
+                                        Where news find you
+                                    </Typography>
+                                </Typography>
+                            </div>
 
-                    <Link to="/politic" style={styles.button}>
-                        <Button color="inherit">Politic</Button>
-                    </Link>
+                            <Link to="/" style={styles.button}>
+                                <Button color="inherit">Headline</Button>
+                            </Link>
 
-                    <Button color="inherit">Economy</Button>
-                    <Button color="inherit">Social</Button>
-                </Toolbar>
-            </AppBar>
-        </div>
+                            <Link to="/politic" style={styles.button}>
+                                <Button color="inherit">Politic</Button>
+                            </Link>
+
+                            <Link to="/economy" style={styles.button}>
+                                <Button color="inherit">Economy</Button>
+                            </Link>
+
+                            <Link to="/social" style={styles.button}>
+                                <Button color="inherit">Social</Button>
+                            </Link>
+                        </div>
+                    </Toolbar>
+                </AppBar>
+            </div>
         )
     }
 }
