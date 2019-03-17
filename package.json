@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "axios": "^0.18.0",
+    "history": "^4.9.0",
     "react": "^16.3.0",
     "react-dom": "^16.0.0",
     "react-native": "^0.59.1",

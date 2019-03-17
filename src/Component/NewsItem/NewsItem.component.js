@@ -1,4 +1,5 @@
 import React, {Component, View} from 'react';
+import { Link } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -19,7 +20,7 @@ export default class NewsItem extends Component {
     render()
 		{
 		return (
-		<Card style={styles.card} onClick={() => window.open(this.state.news.url)}>
+		<Card style={styles.card}>
 			<div>
 				<CardMedia
 					style={styles.cover}
@@ -28,9 +29,12 @@ export default class NewsItem extends Component {
 			</div>
 			<div style={styles.details}>
 				<CardContent style={styles.content}>
+					<a href={this.state.news.url} target="_blank">
 					<Typography component="h5" variant="h5">
 						{this.state.news.title}
 					</Typography>
+					</a>
+
 					<Typography component="h5" variant="subtitle1">
 						{this.state.news.description}
 					</Typography>

@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { browserHistory } from 'react-router';
+import { withRouter, Redirect, Link } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-import Headline from '../Headline/Headline.component';
-import PoliticNews  from '../PoliticNews/PoliticNews.component';
-import EconomyNews from '../EconomyNews/EconomyNews.component';
-import SocialNews from '../SocialNews/SocialNews.component';
+import history from '../../history';
+import styles from './Header.component.style';
 
-export default class Header extends Component {
+class Header extends Component {
     render(){
         return(
         <div>
@@ -19,8 +18,15 @@ export default class Header extends Component {
                     <Typography variant="h6" color="inherit">
                         News
                     </Typography>
-                    <Button color="inherit">Headline</Button>
-                    <Button color="inherit">Politic</Button>
+
+                    <Link to="/" style={styles.button}>
+                        <Button color="inherit">Headline</Button>
+                    </Link>
+
+                    <Link to="/politic" style={styles.button}>
+                        <Button color="inherit">Politic</Button>
+                    </Link>
+
                     <Button color="inherit">Economy</Button>
                     <Button color="inherit">Social</Button>
                 </Toolbar>
@@ -29,3 +35,5 @@ export default class Header extends Component {
         )
     }
 }
+
+export default withRouter(Header)
