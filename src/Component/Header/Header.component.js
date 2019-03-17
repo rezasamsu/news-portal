@@ -16,7 +16,6 @@ class Header extends Component {
                 <AppBar position="static" style={styles.header}>
                     <Toolbar>
                         <div>
-
                             <div style={styles.titleStyle}>
                                 <Typography variant="h4" color="inherit">
                                     Reza Portal News <br/>

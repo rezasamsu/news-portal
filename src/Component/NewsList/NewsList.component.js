@@ -15,18 +15,21 @@ export default class NewsList extends Component {
     }
 
     componentDidMount(){
-        axios.get(this.props.url)
+        const { url } = this.props
+        axios.get(url)
             .then((response) => {
+                const { articles } = response.data
                 this.setState({
-                    news: response.data.articles
+                    news: articles
                 })
             })
     }
 
     render(){
+        const { news } = this.state;
         return (
             <div>
-                {this.state.news && this.state.news.map((news) => <NewsItem news={news}/>)}
+                {news && news.map((news) => <NewsItem news={news}/>)}
             </div>
         )
     }
