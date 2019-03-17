@@ -32,7 +32,7 @@ export default class NewsItem extends Component {
 				<CardContent style={styles.content}>
 					<a href={news.url} target="_blank">
 					<Typography component="h5" variant="h5">
-						{news.title}
+						{news.title} - {news.source.name}
 					</Typography>
 					</a>
 

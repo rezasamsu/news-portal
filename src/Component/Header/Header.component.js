@@ -41,6 +41,10 @@ class Header extends Component {
                             <Link to="/social" style={styles.button}>
                                 <Button color="inherit">Social</Button>
                             </Link>
+
+                            <Link to="/sport" style={styles.button}>
+                                <Button color="inherit">Piala Presiden</Button>
+                            </Link>
                         </div>
                     </Toolbar>
                 </AppBar>

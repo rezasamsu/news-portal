@@ -11,7 +11,7 @@ export default class SocialNews extends Component {
         return (
             <div>
                 <Header/>
-                <NewsList url="https://newsapi.org/v2/everything?q=sport&apiKey=17d26abf61334f41836703a683fb2fb4"/>
+                <NewsList url="https://newsapi.org/v2/everything?q=piala%20presiden&apiKey=17d26abf61334f41836703a683fb2fb4"/>
             </div>
         )
     }
