@@ -34,8 +34,8 @@ class Header extends Component {
                                 <Button color="inherit">Pemilu</Button>
                             </Link>
 
-                            <Link to="/economy" style={styles.button}>
-                                <Button color="inherit">Economy</Button>
+                            <Link to="/korupsi" style={styles.button}>
+                                <Button color="inherit">Korupsi</Button>
                             </Link>
 
                             <Link to="/social" style={styles.button}>

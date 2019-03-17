@@ -7,7 +7,7 @@ import history from '../../history';
 
 import Headline from '../Headline/Headline.component';
 import PemiluNews from '../PemiluNews/PemiluNews.component';
-import EconomyNews from '../EconomyNews/EconomyNews.component';
+import CorruptionNews from '../CorruptionNews/CorruptionNews.component';
 import SocialNews from '../SocialNews/SocialNews.component';
 import SportNews from '../SportNews/SportNews.component';
 
@@ -17,9 +17,8 @@ export default class App extends Component{
             <Router history={history}>
                 <Route exact path="/" component={Headline} />
                 <Route path="/pemilu" component={PemiluNews} />
-                <Route path="/economy" component={EconomyNews} />
+                <Route path="/korupsi" component={CorruptionNews} />
                 <Route path="/social" component={SocialNews} />
-                <Route path="/sport" component={SportNews} />
             </Router>
         )
     }

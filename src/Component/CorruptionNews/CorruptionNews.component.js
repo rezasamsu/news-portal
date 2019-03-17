@@ -11,7 +11,7 @@ export default class EconomyNews extends Component {
         return (
             <div>
                 <Header/>
-                <NewsList url="https://newsapi.org/v2/everything?q=economy&apiKey=17d26abf61334f41836703a683fb2fb4"/>
+                <NewsList url="https://newsapi.org/v2/everything?q=korupsi&apiKey=17d26abf61334f41836703a683fb2fb4"/>
             </div>
         )
     }
